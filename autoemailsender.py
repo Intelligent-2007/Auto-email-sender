@@ -73,12 +73,13 @@ while True:
             print("Type the email line number which u want")
             number = int(input())
             
-            Number1 = number - 1
-            Number2 = number
+            Number1 = number - 2
+            Number2 = Number1 + number
+            Number3 = Number2 + 1
             file = open("Registered_Emails", "r+")
             content = file.readlines()
-            emailnum = content[Number1]
-            passnum = content[Number2]
+            emailnum = content[Number2]
+            passnum = content[Number3]
             
 
            
